@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mithral Brews</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Header -->
   <header>
-    <img src="assets/mug.png" alt="Mithral Brews Logo" class="logo">
-    <h1>Mithral Brews</h1>
+    <div class="logo-title">
+      <img src="assets/images/webLogo1.svg" alt="Mithral Brews logo" />
+      <h1>Mithral Brews</h1>
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle menu">☰ Menu</button>
+
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="guide.html">FoundryVTT Guide</a></li>
+        <li><a href="https://youtube.com/@MithralBrews" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://patreon.com/MithralBrews" target="_blank" rel="noopener">Patreon</a></li>
+        <li><a href="https://ko-fi.com/mithralbrews" target="_blank" rel="noopener">Ko-Fi</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="layout">
+  <!-- Mobile Sidebars (Tablet and Smaller Only) -->
+  <div class="mobile-sidebars">
+    <details class="leftbar-collapse">
+      <summary>Mythic News</summary>
+      <div class="leftbar">
+        <h3>Mythic News</h3>
+        <ul>
+          <li><a href="#" data-post="posts/video1.html">One Piece inspired bounty posters</a></li>
+          <li><a href="#" data-post="posts/video2.html">Commander Grades</a></li>
+          <li><a href="#" data-post="posts/video3.html">D&D character talk stream</a></li>
+        </ul>
+      </div>
+    </details>
 
-    <!-- LEFT SIDEBAR -->
+    <details class="sidebar-collapse">
+      <summary>Previous Posts</summary>
+      <div class="sidebar">
+        <h3>Previous Posts</h3>
+        <ul>
+          <li><a href="#" data-post="posts/2025-09-04-foundry-setup.html">How to Set Up FoundryVTT</a></li>
+          <li><a href="#" data-post="posts/2025-09-02-modular-scenes.html">Modular Scene Building</a></li>
+          <li><a href="#" data-post="posts/2025-08-31-ethical-casting.html">Ethical Casting in Demo Groups</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- Desktop Layout -->
+  <main class="grid-layout">
     <aside class="leftbar">
       <h3>Latest Videos</h3>
       <ul>
         <li><a href="#" data-post="posts/video1.html">One Piece inspired bounty posters</a></li>
-        <li><a href="#" data-post="posts/video2.html">Commander Grades</a></li>
-        <li><a href="#" data-post="posts/video3.html">D&D character talk stream</a></li>
+        <li><a href="#" data-post="posts/video2.html">Commander Grades – Best Main Set Commanders</a></li>
+        <li><a href="#" data-post="posts/video3.html">Silly little stream for D&D character talk</a></li>
       </ul>
+
     </aside>
 
-    <!-- CONTENT VIEWPORT -->
     <section class="content">
-      <h2>Welcome to Mithral Brews</h2>
-      <p>Select a post from either sidebar to load content.</p>
+      <h2>Welcome, Digital DMs</h2>
+      <p>This is your mythic-modern hub for tutorials, insights, and creative support.</p>
     </section>
 
-    <!-- RIGHT SIDEBAR -->
     <aside class="sidebar">
-      <h3>Blog Archive</h3>
+      <h3>Previous Posts</h3>
       <ul>
         <li><a href="#" data-post="posts/2025-09-04-foundry-setup.html">How to Set Up FoundryVTT</a></li>
         <li><a href="#" data-post="posts/2025-09-02-modular-scenes.html">Modular Scene Building</a></li>
         <li><a href="#" data-post="posts/2025-08-31-ethical-casting.html">Ethical Casting in Demo Groups</a></li>
       </ul>
     </aside>
-
   </main>
 
-  <script src="site.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mithral Brews</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="assets/js/site.js"></script>
 </body>
+
 </html>
