@@ -51,14 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Load latest blog post on page load
-  fetch('posts/2025-09-04-foundry-setup.html')
-    .then(response => response.text())
-    .then(html => {
-      contentArea.innerHTML = html;
-    })
-    .catch(() => {
-      contentArea.innerHTML = '<p>Latest post could not be loaded.</p>';
-    });
+  loadContent('posts/video1.html');
 
   document.addEventListener('click', (event) => {
     const link = event.target.closest('a');

@@ -267,7 +267,7 @@ footer {
     font-weight: bold;
     padding: 1rem;
     cursor: pointer;
-    font-size: 1;
+    font-size: 1rem;
   }
 
   .leftbar,
@@ -275,7 +275,6 @@ footer {
     padding: 0;
   }
 
-  @media (max-width: 768px) {
   .leftbar-collapse .leftbar,
   .sidebar-collapse .sidebar {
     padding: 1.5rem;
@@ -298,7 +297,6 @@ footer {
   .sidebar-collapse .sidebar li {
     margin-bottom: 0.5rem;
   }
-}
 }
 
 /* Mobile L (≤425px) */
